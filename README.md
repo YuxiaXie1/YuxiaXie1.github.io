@@ -44,3 +44,9 @@ The website includes a public [rights and permissions page](https://yuxiaxie1.gi
 `editorial.css` supplies the shared visual treatment and responsive research chapter layout. Research uses one numbered heading per project (01 xGATE, 02 xMINT, 03 SPACT / SPACT-ST); figure labels are descriptive rather than independently numbered. Complete method figures are grouped within their project using native disclosure controls.
 
 The Research page opens with `assets/research-overview.svg`, an original program-wide illustration combining conceptual diagrams with embedded panels from the xMINT overview. It introduces molecular measurements, tissue morphology, spatial context, and their connection to the three project chapters. The full-size SVG is available from the page for zooming.
+
+## Public-repository safeguards
+
+Read [Publication policy](PUBLICATION-POLICY.md) before adding new material. Private drafts, credentials, and raw data should remain outside the repository. `.gitignore` and the local staged-file guard reduce accidental commits but do not make files confidential.
+
+Enable the local guard in each clone with `git config core.hooksPath .githooks` (requires Python 3). It checks common secret patterns, private paths, and file sizes. Review image/PDF content and permissions separately.

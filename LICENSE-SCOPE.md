@@ -4,7 +4,7 @@ The Apache License 2.0 text in `LICENSE` is unchanged.
 
 ## Website software
 
-Apache-2.0 applies to the website's reusable software: CSS, JavaScript, and the HTML layout and interaction structure. It does not grant a new license to the editorial or visual content embedded within that structure.
+Apache-2.0 applies to the website's reusable software: CSS, JavaScript, repository maintenance scripts and hooks, and the HTML layout and interaction structure. It does not grant a new license to the editorial or visual content embedded within that structure.
 
 ## Website content
 

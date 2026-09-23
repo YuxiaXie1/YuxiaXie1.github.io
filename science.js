@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0; content exclusions: LICENSE-SCOPE.md
 // Local, original xMINT figure panels. No synthetic measurements are generated.
 document.querySelectorAll('.spatial-module').forEach(module=>{
  module.querySelectorAll('[data-map]').forEach(button=>button.addEventListener('click',()=>{

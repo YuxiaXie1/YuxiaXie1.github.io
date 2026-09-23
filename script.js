@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0; content exclusions: LICENSE-SCOPE.md
 const menuToggle=document.querySelector('.menu-toggle');const nav=document.querySelector('#main-nav');if(menuToggle&&nav){const active=document.querySelector('main')?.dataset.active;nav.querySelectorAll('a[data-page]').forEach(a=>{if(a.dataset.page===active)a.setAttribute('aria-current','page')});menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')==='true';menuToggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false')}))}// Shared image viewer with keyboard navigation and focus restoration.
 const lightbox=document.querySelector('.lightbox');
 if(lightbox){
