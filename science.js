@@ -50,3 +50,12 @@ document.querySelectorAll('[data-photo-filter]').forEach(button=>button.addEvent
  document.querySelectorAll('[data-photo-filter]').forEach(tab=>{const selected=tab===button;tab.classList.toggle('active',selected);tab.setAttribute('aria-pressed',String(selected));});
  document.querySelector('.diary-count').textContent=count+' PHOTOS';
 }));
+// Mark the chapter currently being read without changing keyboard focus.
+const researchLinks=[...document.querySelectorAll('.research-nav a')];
+if(researchLinks.length && 'IntersectionObserver' in window){
+ const chapters=[...document.querySelectorAll('.research-chapter')];
+ const markChapter=id=>researchLinks.forEach(link=>{if(link.hash==='#'+id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+ const chapterObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)markChapter(entry.target.id);});},{rootMargin:'-145px 0px -45% 0px',threshold:0});
+ chapters.forEach(chapter=>chapterObserver.observe(chapter));
+ researchLinks.forEach(link=>link.addEventListener('click',()=>markChapter(link.hash.slice(1))));
+}

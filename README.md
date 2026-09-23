@@ -32,3 +32,15 @@ Original xMINT, xGATE, and xSCOPE figures and 24 additional photos were imported
 Spatial panels are crops of the original xMINT overview, not newly generated measurements. The source does not identify the three output genes or a numeric color scale. The pathway is an explanatory EGFR–RAS–RAF–MEK–ERK diagram based on Reactome, not an xGATE result. Full method figures can be enlarged from the Research page.
 
 To add a diary photo, add a `diary-card` figure in `field-notes.html`, set `data-photo-category` to `travel`, `community`, or `milestones`, and use a local image path. Update the initial photo count. The shared image viewer supports Escape, left/right arrows, focus restoration, and navigation within the visible category.
+
+## License and content rights
+
+Website software (CSS, JavaScript, and reusable HTML structure) is licensed under [Apache-2.0](LICENSE). Photos, research figures, original editorial text, the CV, and personal branding are separately governed by [Content rights](CONTENT-RIGHTS.md). See [License scope](LICENSE-SCOPE.md) for exact boundaries and treatment of earlier releases. Third-party rights and licenses remain with their respective holders.
+
+The website includes a public [rights and permissions page](https://yuxiaxie1.github.io/rights.html). Provenance records do not establish image ownership.
+
+## Design structure
+
+`editorial.css` supplies the shared visual treatment and responsive research chapter layout. Research uses one numbered heading per project (01 xGATE, 02 xMINT, 03 SPACT / SPACT-ST); figure labels are descriptive rather than independently numbered. Complete method figures are grouped within their project using native disclosure controls.
+
+The Research page opens with `assets/research-overview.svg`, an original program-wide illustration combining conceptual diagrams with embedded panels from the xMINT overview. It introduces molecular measurements, tissue morphology, spatial context, and their connection to the three project chapters. The full-size SVG is available from the page for zooming.
